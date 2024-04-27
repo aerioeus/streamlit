@@ -1,6 +1,8 @@
-import streamlit as st
+"This is a Testmodul"
+
 import boto3
 from botocore.exceptions import NoCredentialsError
+import streamlit as st
 
 # Initialize a DynamoDB client
 dynamodb = boto3.resource('dynamodb', region_name='your-region')
