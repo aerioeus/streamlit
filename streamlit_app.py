@@ -233,8 +233,8 @@ def calculator_page():
                     st.error("Cannot divide by zero!")
                     result = None
 
-            if result is not None:
-                st.success(f"Result: {num1} {operation} {num2} = {result}")
+            if result is not None: # type: ignore
+                st.success(f"Result: {num1} {operation} {num2} = {result}") # type: ignore
 
     else:  # Scientific
         st.subheader("Scientific Calculator")
