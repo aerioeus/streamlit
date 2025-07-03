@@ -14,26 +14,14 @@ st.set_page_config(
 
 # Define page functions
 def home_page():
-    st.title("🏠 Welcome to the Multi-Page Demo")
+    st.title("energicos Metering Analysis")
 
     st.markdown("""
     ## About This App
 
-    This is a demonstration of a multi-page Streamlit application that doesn't use session states.
+    This is a quick energicos Metering Data Analysis App.
     Each page is completely independent and stateless.
 
-    ### Available Pages:
-
-    - **Home**: This welcome page
-    - **Analytics**: Data visualization examples
-    - **Data View**: Display sample datasets
-    - **Calculator**: Simple mathematical operations
-
-    ### Features:
-    - Clean navigation using `st.Page` and `st.navigation`
-    - No session state management needed
-    - Each page handles its own functionality
-    - Fast loading and simple architecture
     """)
 
     # Show some basic metrics
@@ -54,7 +42,7 @@ def home_page():
     st.info("👈 Use the sidebar to navigate between pages!")
 
 def analytics_page():
-    st.title("📊 Analytics Dashboard")
+    st.title(" Analytics Dashboard")
 
     st.markdown("This page demonstrates various data visualizations without maintaining any state.")
 
@@ -116,7 +104,7 @@ def analytics_page():
         st.metric("Peak Sales Day", f"${data['sales'].max():.2f}")
 
 def data_page():
-    st.title("📋 Data Viewer")
+    st.title("Data Viewer")
 
     st.markdown("View and filter sample datasets. All filters reset when you navigate away.")
 
